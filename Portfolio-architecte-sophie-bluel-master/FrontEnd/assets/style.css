@@ -135,8 +135,43 @@ li:hover {
 
 .gallery img {
 	width: 100%;
-
 }
+
+/*mise en page du titre de chaque projet*/
+.gallery article p{
+	font-size:13px;
+	font-weight: 400;
+	padding-top:5px;
+}
+
+/*mise en page des filtres*/
+.filtres{
+	display:flex;
+	justify-content: center;
+	padding-top:20px;
+	padding-bottom: 50px;
+}
+
+.filtres button{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:10px;
+	height:37px;
+	border-radius: 60px;
+	border-color: #1D6154;
+	color:#1D6154;
+	background-color: white;
+	display:flex;
+	align-items: center;
+}
+.filtres button:hover,
+.filtres button:active{
+	color:white;
+	background-color: #1D6154;
+}
+/*fin mise en page des filtres*/
+
+
 #contact {
 	width: 50%;
 margin: auto;
