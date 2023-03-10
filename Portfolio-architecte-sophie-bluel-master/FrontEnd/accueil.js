@@ -24,44 +24,32 @@ for (let i = 0; i < projets.length; i++) {
 
 
  //gestion des filtres
-/* const filtreTous = document.querySelector(".filtre_tous");
+const filtreTous = document.querySelector(".filtre_tous");
 filtreTous.addEventListener("click", function () { 
-  console.log(projets);
+  const projetTous =  projets.filter(function(projet) {
+    return projet.categoryId == 1||2||3;})
+    console.log(projetTous);
   });
 
 
 const filtreObjets = document.querySelector(".filtre_objets");
 filtreObjets.addEventListener("click", function () {
-  const projetsFiltres = projet.filter(function (galerie) {
-    return projet.name == "Objets";
-  });
-  console.log(projetsFiltres)
+  const projetObjets =  projets.filter(function(projet) {
+    return projet.categoryId == 1;})
+    console.log(projetObjets);
 });
 
 const filtreAppartements = document.querySelector(".filtre_appart");
 filtreAppartements.addEventListener("click", function () {
-  const projetsFiltres = projet.filter(function (galerie) {
-    return projet.name == "Appartements";
-  });
-  console.log(projetsFiltres)
+  const projetApparts =  projets.filter(function(projet) {
+    return projet.categoryId == 2;})
+    console.log(projetApparts);
 });
 
 const filtreHotelsResto = document.querySelector(".filtre_hotelresto");
 filtreHotelsResto.addEventListener("click", function () {
-  const projetsFiltres = projet.filter(function (galerie) {
-    return projet.name == "Hotels & restaurants";
-  });
-  console.log(projetsFiltres)
-}); */
+  const projetHotelResto =  projets.filter(function(projet) {
+    return projet.categoryId == 3;})
+    console.log(projetHotelResto);
+});
 
-function filtreProjets(value) {
-  //Button class code
-  let filtres = document.querySelectorAll(".filtre");
-  filtres.forEach((button) => {
-    if (value == button.innerText) {
-      button.classList.add("active");
-    } else {
-      button.classList.remove("active");
-    }
-  });
-}
