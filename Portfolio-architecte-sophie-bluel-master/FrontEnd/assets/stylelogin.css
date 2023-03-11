@@ -65,6 +65,12 @@ h2{
     margin:2em;
 }
 
+form {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
 .formulaire{
     font-weight: 500;
     margin-bottom:30px;
@@ -78,17 +84,17 @@ h2{
     margin-top:10px;
 }
 
-.connexion{
-/*manque alignement centré : ne marche pas avec flex*/ 
-    width: 179px;
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 0.6em auto;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
     height: 36px;
-    background-color: #1D6154;
-    border-radius: 60px;
     border: none;
-    font-family: "Syne";
-    color:white;
-    font-weight:700;
-    margin-bottom:30px;
 }
 
 .oubli_mdp a{
@@ -96,8 +102,17 @@ h2{
     color:#3D3D3D;
 }
 
-footer nav ul {
+.oubli_mdp{
+    margin:2em;
+}
+
+footer nav ul{
 	display: flex;
-	justify-content: flex-end;
-	margin: 2em
+	justify-content:end;
+}
+
+footer nav ul li{
+    margin-top:10em;
+    font-size:14px;
+    font-weight:500;
 }
