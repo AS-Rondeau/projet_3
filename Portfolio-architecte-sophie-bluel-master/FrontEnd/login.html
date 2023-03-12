@@ -27,16 +27,19 @@
 
     <main>
         <h2>Log in</h2>
-        <form method="get" action="login.js">
+        <div class="erreur">
+            <p>Identifiant et/ou mot de passe incorrect</p>
+        </div>
+        <form method="get" id="formulaire_connexion" action="login.js">
                 <div class="formulaire">
                     <label for="identifiant">E-mail</label> <br> 
                     <input type="email" name="identifiant" id="identifiant" required><br>
                 </div>
                 <div class="formulaire">
                     <label for="motdepasse">Mot de passe</label> <br> 
-                    <input type="text" name="motdepasse" id="motdepasse" required>
+                    <input type="password" name="motdepasse" id="motdepasse" required>
                 </div>
-            <input type="submit" value="Se connecter" class="connexion">
+            <input type="submit" value="Se connecter" id="connexion">
         </form>
         <div class="oubli_mdp">
             <a href="#">Mot de passe oublié</a>
