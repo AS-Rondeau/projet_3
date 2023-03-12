@@ -53,13 +53,49 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
-header {
+
+.header_edition{
+	background-color: black;
+	display:flex;
+	justify-content: center;
+	align-items: baseline;
+	padding:20px;
+	margin:0px;
+}
+
+.header_edition img{
+	/**à modifier**/
+	position: absolute;
+}
+
+.header_edition p{
+	color:white;
+	font-size: 16px;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.valider_changements{
+	background-color: white;
+	border:none;
+	border-radius: 60px;
+}
+
+.valider_changements p{
+	color:black;
+	font-size: 14px;
+	font-weight: 500;
+	padding:10px 20px;
+}
+
+.header_base {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 0
+	margin:50px 0px;
 }
+
 section {
-	margin: 50px 0
+	margin: 50px 0px;
 }
 
 h1{
@@ -98,13 +134,16 @@ nav li {
 li:hover {
 	color: #B1663C;
 }
+
 #introduction {
 	display: flex;
 	align-items: center;
 }
+
 #introduction figure {
 	flex: 1
 }
+
 #introduction img {
 	display: block;
 	margin: auto;
@@ -114,6 +153,7 @@ li:hover {
 #introduction article {
 	flex: 1
 }
+
 #introduction h2 {
 	margin-bottom: 1em;
 }
@@ -121,10 +161,12 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+
 #portfolio h2 {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
 .gallery {
 	width: 100%;
 	display: grid;
