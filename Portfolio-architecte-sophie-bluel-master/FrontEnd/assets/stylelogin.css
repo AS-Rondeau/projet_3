@@ -62,10 +62,16 @@ h2{
     font-weight:700;
     font-family: 'Syne';
     color: #1D6154;
-    margin:2em;
+    margin:1em;
+}
+
+.erreur{
+	display:none;
+	font-weight:700;
 }
 
 form {
+	margin:1em;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
