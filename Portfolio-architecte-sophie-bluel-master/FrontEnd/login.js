@@ -6,7 +6,7 @@ const messageErreur = document.getElementByClass("erreur");
 const formulaire = document.getElementById("formulaireConnexion");
 const boutonConnexion=document.getElementById("connexion");
 
-boutonConnexion.addEventListener("click", verificationconnexion);
+boutonConnexion.addEventListener("click", verificationconnexion());
 const verificationConnexion = (identifiant)=>{
     const emailEntre = formulaire.identifiant.value;
     const motDePasseEntre = formulaire.motdepasse.value;
@@ -17,8 +17,10 @@ const verificationConnexion = (identifiant)=>{
         const motDePasseUtilisateur=identifiant.password;
         
         if (emailEntre === "emailUtilisateur" && motDePasseEntre === "motDePasseUtilisateur") {
-            //aller sur la page d'accueil avec possibilité de modification de la galerie
+            //aller sur la page d'accueil
             document.location.replace("index.html");
+            //apparition de boutons d'action pour éditer le site + en-tête fond noir
+
         } else {
             //affichage du message d'erreur : constante "messageErreur"
             messageErreur.style.display = block;

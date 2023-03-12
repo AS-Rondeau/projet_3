@@ -9,20 +9,37 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<!--fait appel à un fichier JS-->
+	<!--fait appel au fichier JS-->
 	<script type="module" src="accueil.js"></script>
 </head>
 <body>
 <header>
-	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
-	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li><a href="login.html">login</a></li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+
+	<!-- div à afficher uniquement si connexion validée -->
+	<div class="mode_edition">
+		<div class="header_edition">
+			<div class="icone">
+				<img src="./assets/icons/carre_blanc.png" alt="Instagram">
+				<img src="./assets/icons/stylo_blanc.png" alt="Instagram">
+			</div>
+			<p>Mode édition</p>
+			<button class="valider_changements" type="button">
+				<p>publier les changements</p>
+			</button>
+		</div>
+	</div>
+	
+	<div class="header_base">
+		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+		<nav>
+			<ul>
+				<li>projets</li>
+				<li>contact</li>
+				<li><a href="login.html">login</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <main>
 	<section id="introduction">
@@ -36,8 +53,28 @@
 			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
 		</article>
 	</section>
+	
+	<!-- div à afficher uniquement si connexion validée -->
+	<div class="mode_edition">
+		<div class="icone">
+			<img src="./assets/icons/carre_noir.png" alt="Instagram">
+			<img src="./assets/icons/stylo_noir.png" alt="Instagram">
+		</div>
+		<p>modifier</p>
+	</div>
+	
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
+
+			<!-- div à afficher uniquement si connexion validée -->
+	<div class="mode_edition">
+		<div class="icone">
+			<img src="./assets/icons/carre_noir.png" alt="Instagram">
+			<img src="./assets/icons/stylo_noir.png" alt="Instagram">
+		</div>
+		<p>modifier</p>
+	</div>
+
 		<!-- ajout des filtres -->
 		<div class="filtres">
 			<button class="filtre_tous" type="button">
