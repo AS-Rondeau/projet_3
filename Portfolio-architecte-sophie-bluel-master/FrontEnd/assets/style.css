@@ -54,6 +54,7 @@ body {
 	font-size: 14px;
 }
 
+/** css mode édition**/
 .header_edition{
 	background-color: black;
 	display:flex;
@@ -83,6 +84,7 @@ body {
 	padding-left: 10px;
 	padding-right: 20px;
 }
+
 .valider_changements{
 	background-color: white;
 	border:none;
@@ -95,6 +97,18 @@ body {
 	font-weight: 500;
 	padding:10px 20px;
 }
+
+.edition_intro{
+	display:flex;
+	position:relative;
+	left:5%;
+	margin-top:15px;
+}
+
+.edition_intro p{
+	margin:5px;
+}
+/**fin css mode édition**/
 
 .header_base {
 	display: flex;
@@ -146,6 +160,7 @@ li:hover {
 #introduction {
 	display: flex;
 	align-items: center;
+	margin-bottom:0px;
 }
 
 #introduction figure {
