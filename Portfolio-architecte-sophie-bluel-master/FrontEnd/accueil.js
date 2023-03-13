@@ -2,7 +2,7 @@
 const reponse = await fetch("http://localhost:5678/api/works");
 const projets = await reponse.json();
 //récupération de la liste des catégories
-const reponseCategories = await fetch("http://localhost:5678/api/works");
+const reponseCategories = await fetch("http://localhost:5678/api/categories");
 const categories = await reponseCategories.json();
 
 
@@ -33,6 +33,7 @@ genererGalerie(projets);
 
 
 //gestion des filtres
+//création du filtre Tous
 const filtreTous = document.createElement("button");
 filtreTous.innerText="Tous";
 filtreTous.addEventListener("click", function () { 
@@ -43,6 +44,7 @@ filtreTous.addEventListener("click", function () {
 const filtresCategories=document.querySelector(".filtres");
 filtresCategories.appendChild(filtreTous);
 
+//création des autres filtres via API
 for(let i=0; i<categories.length; i++){
   const categorie=categories[i];
   console.log(categorie);
@@ -61,23 +63,3 @@ for(let i=0; i<categories.length; i++){
   });
 }
 
-
-/* const filtreAppartement = document.querySelector(".filtre_appart");
-filtreAppartement.addEventListener("click", function () {
-  const projetsAppart =  projets.filter(function(projet) {
-    return projet.categoryId == 2;
-  })
-  document.querySelector(".gallery").innerHTML="";
-  genererGalerie(projetsAppart);
-});
-
-const filtreHotelResto = document.querySelector(".filtre_hotelresto");
-filtreHotelResto.addEventListener("click", function () {
-  const projetsHotelResto =  projets.filter(function(projet) {
-    return projet.categoryId == 3;
-  })
-    document.querySelector(".gallery").innerHTML="";
-    genererGalerie(projetsHotelResto);
-}); 
-
- */
