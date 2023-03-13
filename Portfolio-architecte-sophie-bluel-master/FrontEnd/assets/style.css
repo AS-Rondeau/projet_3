@@ -98,6 +98,21 @@ body {
 	padding:10px 20px;
 }
 
+#demande_login{
+color:black;
+text-decoration: none;
+}
+
+#demande_logout{
+	display:none;
+	color:black;
+	text-decoration: none;
+}
+#demande_login:hover,
+#demande_logout:hover{
+	color: #B1663C;
+}
+
 .edition_intro{
 	display:flex;
 	position:relative;
@@ -105,8 +120,32 @@ body {
 	margin-top:15px;
 }
 
-.edition_intro p{
+.edition_galerie{
+	display:flex;
+	position:relative;
+	left:0px;
+	margin-top:0px;
+}
+
+.edition_intro p,
+.edition_galerie p{
 	margin:5px;
+}
+
+.titre_portfolio{
+	display:flex;
+	justify-content: center;
+	align-content:center;
+}
+
+.titre_portfolio h2{
+	margin-right:30px;
+	margin-left:100px;
+}
+
+.mode_edition{
+	align-self:center;
+	display:none;
 }
 /**fin css mode édition**/
 
@@ -185,11 +224,6 @@ li:hover {
 	margin-bottom: 0.5em;
 }
 
-#portfolio h2 {
-	text-align: center;
-	margin-bottom: 1em;
-}
-
 .gallery {
 	width: 100%;
 	display: grid;
@@ -215,6 +249,7 @@ li:hover {
 	justify-content: center;
 	padding-top:20px;
 	padding-bottom: 50px;
+	margin-top:1em;
 }
 
 .filtres button{
