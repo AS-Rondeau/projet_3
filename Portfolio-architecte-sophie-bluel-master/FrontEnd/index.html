@@ -35,7 +35,9 @@
 			<ul>
 				<li>projets</li>
 				<li>contact</li>
-				<li><a href="login.html">login</a></li>
+				<!-- login à passer en logout en mode édition-->
+				<li><a href="login.html" id="demande_login">login</a></li>
+				<li><a href="index.html" id="demande_logout">logout</a></li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 			</ul>
 		</nav>
@@ -66,17 +68,20 @@
 	</div>
 	
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div class="titre_portfolio">
+			<h2>Mes Projets</h2>
 
-		<!-- div à afficher uniquement si connexion validée -->
-		<div class="mode_edition">
-			<div class="edition_galerie">
-				<div class="icone">
-					<img src="./assets/icons/carre_noir.png" id="carre" alt="Instagram">
-					<img src="./assets/icons/stylo_noir.png" id="stylo" alt="Instagram">
+			<!-- div à afficher uniquement si connexion validée -->
+			<div class="mode_edition">
+				<div class="edition_galerie">
+					<div class="icone">
+						<img src="./assets/icons/carre_noir.png" id="carre" alt="Instagram">
+						<img src="./assets/icons/stylo_noir.png" id="stylo" alt="Instagram">
+					</div>
+					<p>modifier</p>
 				</div>
-				<p>modifier</p>
 			</div>
+
 		</div>
 
 		<!-- ajout des filtres -->
