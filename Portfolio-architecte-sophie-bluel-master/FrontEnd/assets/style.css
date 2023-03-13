@@ -63,9 +63,17 @@ body {
 	margin:0px;
 }
 
-.header_edition img{
-	/**à modifier**/
-	position: absolute;
+.icone{
+	position:relative;
+}
+
+#carre{
+	position:absolute;
+	margin-top:4px;
+}
+
+#stylo{
+	margin-left:4px;
 }
 
 .header_edition p{
