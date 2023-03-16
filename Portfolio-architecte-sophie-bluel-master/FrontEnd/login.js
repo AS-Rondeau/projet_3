@@ -11,22 +11,24 @@ const messageErreur = document.querySelector(".erreur");
 
 const emailEntre = formulaire.identifiant.value;
 const motDePasseEntre = formulaire.motdepasse.value;
-let utilisateur = {
-    "email": emailEntre,
-    "password": motDePasseEntre
-};
 
+console.log(emailEntre);
+console.log(motDePasseEntre);
 
-async function verificationConnexion (parametres){
+async function verificationConnexion (){
+    let utilisateur = {
+        "email": emailEntre,
+        "password": motDePasseEntre
+    };
+    console.log(utilisateur);
     let response = await fetch("http://localhost:5678/api/users/login", {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json;charset=utf-8'
         },
-        body: JSON.stringify(parametres)
+        body: JSON.stringify(utilisateur)
     });
     console.log(response.ok);
-
     let result = await response.json();
 
     if(response.ok==true){
@@ -45,5 +47,5 @@ async function verificationConnexion (parametres){
     }
 }
 
-boutonConnexion.addEventListener("click", verificationConnexion(utilisateur));
+boutonConnexion.addEventListener("click", verificationConnexion);
 
